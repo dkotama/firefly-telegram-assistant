@@ -1,0 +1,8 @@
+python-telegram-bot
+sentence-transformers
+faiss-cpu
+requests
+python-dotenv
+asyncio
+openai
+sentence-transformers

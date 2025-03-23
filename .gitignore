@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environments
+.env
+venv/
+.venv/
+
+# Distributions
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# macOS system files
+.DS_Store
+
+# Log files
+*.log
+
+# SQLite database files
+*.sqlite3
+
+# env folders
+env/
+Lib/
+Scripts/
+Include/
