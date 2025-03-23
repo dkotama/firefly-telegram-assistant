@@ -1,10 +1,44 @@
-# Firefly Telegram Bot
+# Firefly Telegram Assistant
 
-A Telegram bot designed to integrate with the Firefly III personal finance manager. This bot allows users to interact with their Firefly III instance directly from Telegram, making it easier to manage personal finances on the go.
+This is a proof-of-concept application that uses the Open AI API to help input Firefly expenses in under 10 seconds.
 
+## Overview
 
+The Firefly Telegram Assistant syncs your Firefly data to a local database and suggests new expenses via Telegram based on your spending patterns. This project is currently in **alpha** stage.
 
+## Technologies Used
 
-## License
+- **Telegram API**: For bot communication
+- **SQLite**: Local database storage
+- **Open AI API**: For intelligent expense suggestions
+- **ALL-miniLM-L6-V2**: For similarity detection on blob data in SQLite
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Features
+
+- Syncs Firefly data to a local SQLite database
+- Suggests new expenses based on your spending history via Telegram
+
+## Future Updates
+
+1. Code refactoring for better maintainability
+2. Add auto-sync functionality
+3. Dockerize the application for easier deployment
+
+## How to Run the App
+
+1. **Configure Environment Variables**  
+   - Edit the `.env` file and fill in all required tokens (Telegram bot token, Open AI API key, etc.).
+
+2. **Sync Firefly Data**  
+   - Run `python firefly_sync.py` to synchronize your Firefly data with the local SQLite database.
+
+3. **Start the Bot**  
+   - Run `python main.py` to start the Telegram bot.
+
+4. **Interact with the Bot**  
+   - Open Telegram and start talking to your bot!
+
+## Notes
+
+- This is an alpha version, so expect bugs and incomplete features.
+- Ensure all dependencies are installed before running the app (e.g., via `requirements.txt` if provided).
